@@ -1,5 +1,5 @@
 # Ohjelmistotekniikan harjoitustyö, syksy 2022
-## Tehtävät
+## Tehtävät:
 **Viikko 1**
 
 [komentorivi.txt](https://github.com/tovento/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
