@@ -1,0 +1,114 @@
+commit 050e42adac19eeaf338ceee95dbf425ac141d014
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 14:34:27 2022 +0200
+
+    Poista file1 ja uudelleennimeä file2
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7cfeb5ba3e9a654738f009f91716c02110b5d9d1
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 14:25:21 2022 +0200
+
+    Lisää kansio tiedostoja
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit e188c768044b3a2687876fb5827019bcaa660ffe
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 14:18:45 2022 +0200
+
+    Muokkaa ekaa ja kolmatta
+
+ eka.txt    | 2 +-
+ kolmas.txt | 3 ++-
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+commit 932e8308a48f777ea67172271fdeca661ca309fd
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 14:13:59 2022 +0200
+
+    Uudelleennimeä tiedosto ekaksi
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7fa645640f79a22e9f9648e5bb9e946a419f6457
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 14:11:31 2022 +0200
+
+    Poista toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 5c7f47984d7999b02862f3e46a358664f41356ad
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 14:03:54 2022 +0200
+
+    Muokkaa tiedostoa
+
+ tiedosto.txt | 15 ++++++++++++---
+ 1 file changed, 12 insertions(+), 3 deletions(-)
+
+commit 12dbd52f927a044b1681b1926a05712dd3bd45b3
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 14:00:01 2022 +0200
+
+    Lisää tiedostoon tekstiä
+
+ tiedosto.txt | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit ecc8b860f03f6b8996f7c99b521205283babdc70
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 13:51:06 2022 +0200
+
+    Luo kansio stuff
+
+ stuff/jee.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b19f5a8046ff98f853401a762b598e510cab0724
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 13:50:32 2022 +0200
+
+    Muokkauksia
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 4e99c0865667359254d4f7df6ff12b69b52f1415
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 13:34:32 2022 +0200
+
+    Lisää kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ec6a4833147ca6c94818b592ecd09cde4c22bb24
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 13:30:44 2022 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit e280581ce535c7559b1bfb6e3e632435ae5fd0b5
+Author: tovento <92781588+tovento@users.noreply.github.com>
+Date:   Tue Nov 1 13:28:16 2022 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
