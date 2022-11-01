@@ -1,4 +1,4 @@
-# Ohjelmistotekniikan harjoitustyö
+# Ohjelmistotekniikan harjoitustyö, syksy 2022
 ## Tehtävät
 **Viikko 1**
 
