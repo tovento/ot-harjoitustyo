@@ -3,3 +3,6 @@ __pycache__
 *.swp
 .coverage
 htmlcov
+
+data/database.sqlite
+data/test-database.sqlite
