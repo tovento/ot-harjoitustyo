@@ -13,7 +13,7 @@ class TestBookJournalService(unittest.TestCase):
                                     "Great Author",
                                     123)
         assert result.date == "1.1.2022"
-        assert result.name == "Bookname"
+        assert result.title == "Bookname"
         assert result.author == "Great Author"
         assert result.pages == 123
         assert result.notes == None
