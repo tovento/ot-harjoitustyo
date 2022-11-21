@@ -1,19 +1,39 @@
-# Ohjelmistotekniikan harjoitustyö, syksy 2022
-## Tehtävät:
-**Viikko 1**
+# Lukupäiväkirja
+**Ohjelmistotekniikka, syksy 2022**
 
-[komentorivi.txt](https://github.com/tovento/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+Lukupäiväkirjan avulla käyttäjä voi kirjata muistiin tietoja lukemistaan kirjoista sekä pitää listaa kirjoista, jotka haluaa lukea. Sovelluksen kehitys edistyy viikoittain loppusyksyllä 2022.
 
-[gitlog.txt](https://github.com/tovento/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+## Dokumentaatio
 
-**Viikko 2**
+- [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+- [Changelog](./dokumentaatio/changelog.md)
+- [Tuntikirjanpito](./dokumentaatio/tuntikirjanpito.md)
 
-[maksukortti](https://github.com/tovento/ot-harjoitustyo/tree/master/laskarit/viikko2/maksukortti)
+## Komentorivitoiminnot
 
-[unicafe](https://github.com/tovento/ot-harjoitustyo/tree/master/laskarit/viikko2/unicafe)
+### Ohjelman käynnistäminen
 
-[coverage100.png](https://github.com/tovento/ot-harjoitustyo/blob/master/laskarit/viikko2/coverage100.png)
+Ohjelma käynnistyy komennolla:
+```
+poetry run invoke start
+```
 
-[vaatimusmaarittely.md](https://github.com/tovento/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+### Testaus
 
-[tuntikirjanpito.md](https://github.com/tovento/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+Testien ajo komennolla:
+```
+poetry run invoke test
+```
+
+### Testikattavuus
+
+Testikattavuusraportin generointi komennolla:
+```
+poetry run invoke coverage-report
+```
+
+### Pylint-tarkistus
+
+```
+poetry run invoke pylint
+```
