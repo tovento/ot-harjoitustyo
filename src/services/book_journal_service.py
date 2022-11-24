@@ -25,4 +25,6 @@ class BookJournalService:
         """Hakee listan Lukupäiväkirjaan tallennetuista luetuista kirjoista."""
         books = self._book_journal_repository.find_all()
 
+        return books
+
 book_journal_service = BookJournalService()

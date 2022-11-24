@@ -1,4 +1,5 @@
 from tkinter import ttk, constants
+from services.book_journal_service import book_journal_service
 
 class BookJournalView:
     """Näkymä, jossa listataan luetut kirjat."""
@@ -29,7 +30,16 @@ class BookJournalView:
                     command=self._handle_add_read_book_view)
 
         label = ttk.Label(master=self._frame, text="Luetut kirjat:")
+        books = book_journal_service.find_all_books()
+        book_messages = [f"{book.date}: {book.author}: " \
+                        f"{book.title}, {book.pages} sivua.\n " \
+                        f"Muistiinpanot: {book.notes}"
+                        for book in books]
 
         heading_label.grid(padx=5, pady=5)
         button.grid(padx=5, pady=5)
         label.grid(padx=5, pady=5)
+
+        for message in book_messages:
+            book_list = ttk.Label(master=self._frame, text=message)
+            book_list.grid(padx=5, pady=5)
