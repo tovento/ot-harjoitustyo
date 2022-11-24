@@ -20,3 +20,9 @@ class BookJournalService:
         self._book_journal_repository.save_book(book)
 
         return book
+
+    def find_all_books(self):
+        """Hakee listan Lukupäiväkirjaan tallennetuista luetuista kirjoista."""
+        books = self._book_journal_repository.find_all()
+
+book_journal_service = BookJournalService()
