@@ -1,0 +1,1 @@
+![Pakkauskaavio](./kuvat/arkkitehtuurikaavio.png)

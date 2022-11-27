@@ -6,6 +6,7 @@ Lukupäiväkirjan avulla käyttäjä voi kirjata muistiin tietoja lukemistaan ki
 ## Dokumentaatio
 
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+- [Arkkitehtuurikuvaus](./dokumentaatio/arkkitehtuuri.md)
 - [Changelog](./dokumentaatio/changelog.md)
 - [Tuntikirjanpito](./dokumentaatio/tuntikirjanpito.md)
 
