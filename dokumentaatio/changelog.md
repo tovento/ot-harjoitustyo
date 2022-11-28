@@ -16,3 +16,13 @@ tallentaminen ei vielä onnistu käyttöliittymänäkymän kautta.
 - Kirjoitettu kaksi testiä, jotka testaavat:
     - kirjan tallennusta tietokantaan
     - tietokantaan tallennettujen kirjojen hakemista.
+
+## Viikko 4
+
+- Yhdistetty sovellus SQLite-tietokantaan.
+- Luettujen kirjojen lisääminen tietokantaan sekä kaikkien luettujen
+  kirjojen haku tietokannasta onnistuvat.
+- Kehitetty käyttöliittymää:
+    - käyttäjä näkee lukemansa kirjat listana sovelluksen etusivulla
+    - käyttäjä voi lisätä luettuja kirjoja lukupäiväkirjaan käyttöliittymän
+      kautta.

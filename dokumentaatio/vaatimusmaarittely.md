@@ -19,10 +19,10 @@ sivunumerot.
 
 ## Perusversion suunnitellut toiminnallisuudet
 
-- Käyttäjä näkee listan lukemistaan kirjoista.
-- Käyttäjä voi lisätä lukupäiväkirjaan luetun kirjan.
+- Käyttäjä näkee listan lukemistaan kirjoista. *Tehty*
+- Käyttäjä voi lisätä lukupäiväkirjaan luetun kirjan. *Tehty*
 - Luetuista kirjoista voidaan tallentaa seuraavat tiedot: päivämäärä, kirjailija, kirjan
-  nimi, sivumäärä, vapaata tekstiä.
+  nimi, sivumäärä, vapaata tekstiä. *Tehty*
 - Käyttäjä voi tehdä lukulistan eli listan kirjoista, jotka haluaa lukea.
 - Lukulistalta voi poistaa kirjoja.
 
