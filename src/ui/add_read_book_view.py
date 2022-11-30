@@ -5,7 +5,16 @@ class AddReadBookView:
     """Näkymä, jossa käyttäjä voi lisätä tietoja lukemastaan kirjasta."""
 
     def __init__(self, root, handle_book_journal_view):
-        """TODO"""
+        """Luokan konstruktori. Luo uuden näkymän, jolla käyttäjä voi lisätä
+        lukemansa kirjan lukupäiväkirjaan.
+
+        Args:
+            root:
+                TKinter-elementti, jonka sisään näkymä alustetaan.
+            handle_book_journal_view:
+                Kutsuttava funktio, jolla siirrytään lukupäiväkirjan
+                perusnäkymään.
+        """
         self._root = root
         self._handle_book_journal_view = handle_book_journal_view
         self._frame = None
@@ -13,9 +22,11 @@ class AddReadBookView:
         self._initialize()
 
     def destroy(self):
+        """Tuhoaa näkymän."""
         self._frame.destroy()
 
     def pack(self):
+        """Näyttää näkymän."""
         self._frame.pack(fill=constants.X)
     
     def _initialize(self):

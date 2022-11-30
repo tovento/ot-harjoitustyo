@@ -2,10 +2,16 @@ from entities.book import Book
 from repositories.book_journal_repository import book_journal_repository as bjr
 
 class BookJournalService:
-    """ TODO """
+    """Lukupäiväkirjan sovelluslogiikasta vastaava luokka."""
 
     def __init__(self, book_journal_repository=bjr):
-        """ TODO"""
+        """Luokan konstruktori. Luo uuden sovelluslogiikasta vastaavan
+        palvelun.
+
+        Args:
+            book_journal_repository:
+                BookJournalRepository-olio.
+        """
         self._book_journal_repository = book_journal_repository
 
     def add_read_book(self, date, title, author, pages, notes=None):

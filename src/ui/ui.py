@@ -4,7 +4,7 @@ from ui.add_read_book_view import AddReadBookView
 from ui.add_note_to_reading_list_view import AddNoteToReadingList
 
 class UI:
-    """ TODO """
+    """Käyttöliittymästä vastaava luokka."""
 
     def __init__(self, root):
         self._root = root

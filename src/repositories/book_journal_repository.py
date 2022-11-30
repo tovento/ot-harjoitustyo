@@ -2,9 +2,13 @@ from entities.book import Book
 from database_connection import get_database_connection
 
 class BookJournalRepository:
-    """TODO"""
+    """Tietokantatoiminnoista vastaava luokka."""
     def __init__(self, connection):
-        """TODO"""
+        """Luokan konstruktori.
+
+        Args:
+            connection: Tietokantayhteyden Connection-olio.
+        """
         self._connection = connection
 
     def find_all(self):
