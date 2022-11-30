@@ -1,51 +1,80 @@
 from database_connection import get_database_connection
 
 def initialize_database():
-    """TODO"""
+    """Alustaa tietokannan ohjelman käynnistyessä."""
     connection = get_database_connection()
 
     if not check_table_exist(connection):
         create_tables(connection)
 
 def check_table_exist(connection):
-    """TODO"""
+    """Tarkastaa, onko tietokannassa tietokantatauluja.
+
+    Args:
+        connection: Tietokantayhteyden Connection-olio.
+    """
     cursor = connection.cursor()
     cursor.execute("""
         SELECT name
         FROM sqlite_schema
         WHERE type='table'
-        AND name='Books'""")
-    result = cursor.fetchall()
+        AND name='Books'
+        """)
+    result1 = cursor.fetchall()
+    cursor.execute("""
+        SELECT name
+        FROM sqlite_schema
+        WHERE type='table'
+        AND name='BooksToRead'
+        """)
+    result2 = cursor.fetchall()
 
-    return len(result) == 1
+    return len(result1) > 0 or len(result2) > 0
 
 def reinitialize_database():
-    """TODO """
+    """Alustaa tietokannan uudelleen. Poistaa tietokantataulut tietokannasta ja
+    luo tietokantataulut uudelleen.
+    """
     connection = get_database_connection()
 
     drop_tables(connection)
     create_tables(connection)
 
 def drop_tables(connection):
-    """TODO """
+    """Poistaa kaikki tietokantataulut tietokannasta.
+
+    Args:
+        connection: Tietokantayhteyden Connection-olio.
+    """
     cursor = connection.cursor()
 
     cursor.execute("DROP TABLE if exists Books")
+    cursor.execute("DROP TABLE if exists BooksToRead")
 
     connection.commit()
 
 def create_tables(connection):
-    """TODO """
+    """Luo taulut Books ja BooksToRead tietokantaan.
+
+    Args:
+        connection: Tietokantayhteyden Connection-olio.
+    """
     cursor = connection.cursor()
 
     cursor.execute("""CREATE TABLE Books (
-                          id SERIAL PRIMARY KEY,
-                          date TEXT,
-                          title TEXT,
-                          author TEXT,
-                          pages INT,
-                          notes TEXT
-                       );
+                        id SERIAL PRIMARY KEY,
+                        date TEXT,
+                        title TEXT,
+                        author TEXT,
+                        pages INT,
+                        notes TEXT
+                      );
+                   """)
+
+    cursor.execute("""CREATE TABLE BooksToRead (
+                        id SERIAL PRIMARY KEY,
+                        description TEXT
+                      );
                    """)
 
     connection.commit()
