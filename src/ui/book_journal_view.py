@@ -7,7 +7,10 @@ class BookJournalView:
     kirjat, jotka käyttäjä on merkinnyt haluavansa lukea.
     """
 
-    def __init__(self, root, handle_add_read_book_view):
+    def __init__(self,
+                 root,
+                 handle_add_read_book_view,
+                 handle_add_note_to_reading_list_view):
         """Luokan konstruktori. Luo lukupäiväkirjan perusnäkymän kahdella
         välilehdellä.
 
@@ -17,10 +20,14 @@ class BookJournalView:
             handle_add_read_book_view:
                 Kutsuttava funktio, joka vie käyttäjän lomakkeeseen, jolla hän
                 voi lisätä uuden luetun kirjan lukupäiväkirjaan.
+            handle_add_note_to_reading_list_view:
+                Kutsuttava funktio, joka vie käyttäjän lomakkeeseen, jolla hän
+                voi lisätä muistiinpanon lukulistalle.
         """
 
         self._root = root
-        self._handle_add_read_book_view = handle_add_read_book_view
+        self._handle_add_book = handle_add_read_book_view
+        self._handle_add_note = handle_add_note_to_reading_list_view
         self._frame1 = None
         self._frame2 = None
         self._notebook = ttk.Notebook(self._root)
@@ -50,7 +57,7 @@ class BookJournalView:
         button1 = ttk.Button(
                     master=self._frame1,
                     text="Lisää luettu kirja",
-                    command=self._handle_add_read_book_view)
+                    command=self._handle_add_book)
 
         label1 = ttk.Label(master=self._frame1, text="Luetut kirjat:")
         books = book_journal_service.find_all_books()
@@ -71,7 +78,8 @@ class BookJournalView:
 
         button2 = ttk.Button(
                     master=self._frame2,
-                    text="Lisää kirja lukulistalle")
+                    text="Lisää kirja lukulistalle",
+                    command=self._handle_add_note)
 
         label2 = ttk.Label(master=self._frame2, text="Lukulista:")
 
