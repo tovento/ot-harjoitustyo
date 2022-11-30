@@ -1,4 +1,5 @@
 from entities.book import Book
+from entities.book_to_read import BookToRead
 from repositories.book_journal_repository import book_journal_repository as bjr
 
 class BookJournalService:
@@ -32,5 +33,19 @@ class BookJournalService:
         books = self._book_journal_repository.find_all()
 
         return books
+
+    def add_readinglist_note(self, description):
+        """Lisää muistiinpanon lukulistalle."""
+        note = BookToRead(description)
+
+        self._book_journal_repository.save_note(note)
+
+        return note
+
+    def find_all_notes(self):
+        """Hakee listan lukulistaan tallennetuista muistiinpanoista."""
+        notes = self._book_journal_repository.find_all_notes()
+
+        return notes
 
 book_journal_service = BookJournalService()

@@ -83,6 +83,13 @@ class BookJournalView:
 
         label2 = ttk.Label(master=self._frame2, text="Lukulista:")
 
+        notes = book_journal_service.find_all_notes()
+        note_messages = [note.description for note in notes]
+
         heading_label2.grid(padx=5, pady=5)
         button2.grid(padx=5, pady=5)
         label2.grid(padx=5, pady=5)
+
+        for message in note_messages:
+            note_list = ttk.Label(master=self._frame2, text=message)
+            note_list.grid(padx=5, pady=5)

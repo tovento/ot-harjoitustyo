@@ -45,17 +45,23 @@ class AddNoteToReadingList:
                     text="Lisää lukulistalle",
                     command=self._handle_adding_note)
 
+        back_button = ttk.Button(
+                     master=self._frame,
+                     text="Takaisin",
+                     command=self._handle_book_journal_view)
+
         heading_label.grid(padx=5, pady=5)
         label.grid(padx=5, pady=5)
         self._entry.grid(padx=5, pady=5)
         button.grid(padx=5, pady=5)
+        back_button.grid(padx=5, pady=5)
 
     def _handle_adding_note(self):
         entry_value = self._entry.get()
 
         if entry_value:
-            pass
-            #book_journal_service
+            book_journal_service.add_readinglist_note(entry_value)
+
             self._handle_book_journal_view()
         else:
             pass
