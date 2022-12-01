@@ -6,7 +6,7 @@ class TestBookJournalService(unittest.TestCase):
     def setUp(self):
         self.service = BookJournalService()
 
-    def test_BJS_returns_correct_object(self):
+    def test_BJS_returns_correct_book_object(self):
         result = self.service.add_read_book(
                                     "1.1.2022",
                                     "Bookname",
@@ -18,3 +18,8 @@ class TestBookJournalService(unittest.TestCase):
         assert result.author == "Great Author"
         assert result.pages == 123
         assert result.notes == None
+
+    def test_BJS_returns_correct_booktoread_object(self):
+        result = self.service.add_readinglist_note("Soturikissat")
+
+        assert result.description == "Soturikissat"

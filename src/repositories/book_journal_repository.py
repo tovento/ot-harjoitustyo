@@ -43,10 +43,13 @@ class BookJournalRepository:
         return book
 
     def delete_all(self):
-        """Poistaa kaikki tallennetut kirjat lukupäiväkirjasta."""
+        """Poistaa kaikki tallennetut kirjat lukupäiväkirjasta ja
+        lukulistalta.
+        """
         cursor = self._connection.cursor()
 
         cursor.execute("DELETE From Books")
+        cursor.execute("DELETE From BooksToRead")
 
         self._connection.commit()
 
