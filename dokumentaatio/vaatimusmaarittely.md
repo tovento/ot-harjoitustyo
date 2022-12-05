@@ -24,6 +24,7 @@ sivunumerot.
 - Luetuista kirjoista voidaan tallentaa seuraavat tiedot: päivämäärä, kirjailija, kirjan
   nimi, sivumäärä, vapaata tekstiä. *Tehty*
 - Käyttäjä voi tehdä lukulistan eli listan kirjoista, jotka haluaa lukea.
+  *Tehty*
 - Lukulistalta voi poistaa kirjoja.
 
 ## Mahdollisia laajennuksia

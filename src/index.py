@@ -3,6 +3,9 @@ from ui.ui import UI
 from initialize_database import initialize_database
 
 def main():
+    """Metodi, joka käynnistää sovelluksen. Alustaa ensin tietokannan ja käynnistää sen
+    jälkeen käyttöliittymän.
+    """
     initialize_database()
 
     window = Tk()

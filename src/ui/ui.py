@@ -11,6 +11,7 @@ class UI:
         self._current_view = None
 
     def start(self):
+        """Käynnistää käyttöliittymän."""
         self._show_book_journal_view()
     
     def _hide_current_view(self):
