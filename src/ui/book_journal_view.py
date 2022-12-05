@@ -31,14 +31,13 @@ class BookJournalView:
         self._frame1 = None
         self._frame2 = None
         self._notebook = ttk.Notebook(self._root)
-        self._notebook.pack(pady=5, expand=True)
+        self._notebook.pack(pady=30, padx=30, fill="both", expand=True)
 
         self._initialize()
 
     def destroy(self):
         """Tuhoaa näkymät."""
-        self._frame1.destroy()
-        self._frame2.destroy()
+        self._notebook.destroy()
 
     def pack(self):
         """Näyttää näkymät."""

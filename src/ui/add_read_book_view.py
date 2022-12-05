@@ -27,7 +27,7 @@ class AddReadBookView:
 
     def pack(self):
         """Näyttää näkymän."""
-        self._frame.pack(fill=constants.X)
+        self._frame.pack(pady=30, padx=30, fill="both", expand=True)
     
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)

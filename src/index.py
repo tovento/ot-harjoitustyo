@@ -1,4 +1,4 @@
-from tkinter import Tk
+from tkinter import *
 from ui.ui import UI
 from initialize_database import initialize_database
 
@@ -10,6 +10,8 @@ def main():
 
     window = Tk()
     window.title("Lukupäiväkirja")
+    window.minsize(300, 300)
+    window['background'] = '#dfd5e1'
 
     ui = UI(window)
     ui.start()
