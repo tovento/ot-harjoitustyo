@@ -9,4 +9,8 @@
 | 24.11. | 3   | tkinter, sqlite |
 | 27.11. | 1   | arkkitehtuurikuvaus |
 | 28.11. | 4   | dokumentaatio, tkinter |
-| yht | 27 | |
+| 30.11. | 7   | tkinter, sqlite, entities, services, dokumentaatio |
+| 1.12.  | 2   | testaus |
+| 5.12.  | 4   | tkinter, dokumentaatio |
+| 6.12.  | 1   | github release, hienosäätöä |
+| yht | 41 | |

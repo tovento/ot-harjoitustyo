@@ -3,6 +3,29 @@
 
 Lukupäiväkirjan avulla käyttäjä voi kirjata muistiin tietoja lukemistaan kirjoista sekä pitää listaa kirjoista, jotka haluaa lukea. Sovelluksen kehitys edistyy viikoittain loppusyksyllä 2022.
 
+## Uusin release
+
+Uusin release löytyy
+[täältä](https://github.com/tovento/ot-harjoitustyo/releases/tag/viikko5).
+
+## Asennus ja käyttöönotto
+
+Sovellus on kehitetty ja testattu Python-versiolla 3.10. On mahdollista, että sovellus ei toimi tarkoituksenmukaisesti vanhemmilla Pythonin versioilla.
+
+Sovelluksen käyttö vaatii [Poetryn](https://python-poetry.org/) asennuksen.
+
+Riippuvuudet asennetaan komennolla:
+
+```bash
+poetry install
+```
+
+Sovellus käynnistyy komennolla:
+
+```bash
+poetry run invoke start
+```
+
 ## Dokumentaatio
 
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)

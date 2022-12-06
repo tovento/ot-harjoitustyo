@@ -26,3 +26,17 @@ tallentaminen ei vielä onnistu käyttöliittymänäkymän kautta.
     - käyttäjä näkee lukemansa kirjat listana sovelluksen etusivulla
     - käyttäjä voi lisätä luettuja kirjoja lukupäiväkirjaan käyttöliittymän
       kautta.
+
+## Viikko 5
+
+- Luotu BookToRead-luokka, joka kuvastaa lukulistalle lisättävää kirjaa tai
+  muistiinpanoa.
+
+- Lisätty toiminnallisuutta: käyttäjä voi lisätä kirjoja lukulistalle.
+
+- Laajennettu käyttöliittymää:
+    - etusivulla on kaksi välilehteä: toinen luetuille kirjoille ja toinen
+      lukulistalle
+    - kirjojen lisääminen lukulistalle onnistuu käyttöliittymän kautta.
+
+- Kirjoitettu testejä lukulistaan liittyen.
