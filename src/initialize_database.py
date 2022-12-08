@@ -62,7 +62,7 @@ def create_tables(connection):
     cursor = connection.cursor()
 
     cursor.execute("""CREATE TABLE Books (
-                        id SERIAL PRIMARY KEY,
+                        id INTEGER PRIMARY KEY,
                         date TEXT,
                         title TEXT,
                         author TEXT,
@@ -72,7 +72,7 @@ def create_tables(connection):
                    """)
 
     cursor.execute("""CREATE TABLE BooksToRead (
-                        id SERIAL PRIMARY KEY,
+                        id INTEGER PRIMARY KEY,
                         description TEXT
                       );
                    """)

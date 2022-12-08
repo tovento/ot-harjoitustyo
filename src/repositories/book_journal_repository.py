@@ -61,7 +61,7 @@ class BookJournalRepository:
 
         rows = cursor.fetchall()
 
-        return [BookToRead(row["description"]) for row in rows]
+        return [(BookToRead(row["description"]), row["id"]) for row in rows]
 
     def save_note(self, note):
         """Tallentaa muistiinpanon lukulistalle."""
@@ -72,5 +72,12 @@ class BookJournalRepository:
         self._connection.commit()
 
         return note
+
+    def delete_note(self, note_id):
+        """Poistaa yksittäisen muistiinpanon lukulistalta."""
+        cursor= self._connection.cursor()
+        cursor.execute("DELETE FROM BooksToRead WHERE id=(?)", (note_id,))
+
+        self._connection.commit()
 
 book_journal_repository = BookJournalRepository(get_database_connection())

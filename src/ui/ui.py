@@ -27,6 +27,7 @@ class UI:
 
         self._current_view = BookJournalView(
                                 self._root,
+                                self._handle_book_journal_view,
                                 self._handle_add_read_book_view,
                                 self._handle_add_note_to_reading_list_view)
         self._current_view.pack()

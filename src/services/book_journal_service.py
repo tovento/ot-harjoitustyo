@@ -48,4 +48,8 @@ class BookJournalService:
 
         return notes
 
+    def delete_note(self, note_id):
+        """Poistaa yksittäisen muistiinpanon lukulistalta."""
+        self._book_journal_repository.delete_note(note_id)
+
 book_journal_service = BookJournalService()
