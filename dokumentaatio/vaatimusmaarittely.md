@@ -25,7 +25,7 @@ sivunumerot.
   nimi, sivumäärä, vapaata tekstiä. *Tehty*
 - Käyttäjä voi tehdä lukulistan eli listan kirjoista, jotka haluaa lukea.
   *Tehty*
-- Lukulistalta voi poistaa kirjoja.
+- Lukulistalta voi poistaa kirjoja. *Tehty*
 
 ## Mahdollisia laajennuksia
 

@@ -13,4 +13,7 @@
 | 1.12.  | 2   | testaus |
 | 5.12.  | 4   | tkinter, dokumentaatio |
 | 6.12.  | 1   | github release, hienosäätöä |
-| yht | 41 | |
+| 8.12.  | 2   | lisää toiminnallisuutta |
+| 11.12. | 1   | dokumentaatio |
+| 12.12. | 2   | dokumentaatio |
+| yht | 46 | |

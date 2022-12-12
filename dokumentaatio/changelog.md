@@ -40,3 +40,7 @@ tallentaminen ei vielä onnistu käyttöliittymänäkymän kautta.
     - kirjojen lisääminen lukulistalle onnistuu käyttöliittymän kautta.
 
 - Kirjoitettu testejä lukulistaan liittyen.
+
+## Viikko 6
+
+- Mahdollistettu muistiinpanojen poistaminen lukulistalta.
