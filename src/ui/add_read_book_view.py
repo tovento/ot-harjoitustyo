@@ -36,13 +36,13 @@ class AddReadBookView:
 
         date_label = ttk.Label(master=self._frame, text="Pvm:")
         self._date_entry = ttk.Entry(master=self._frame)
-        title_label = ttk.Label(master=self._frame, text="Title:")
+        title_label = ttk.Label(master=self._frame, text="Nimi:")
         self._title_entry = ttk.Entry(master=self._frame)
-        author_label = ttk.Label(master=self._frame, text="Author:")
+        author_label = ttk.Label(master=self._frame, text="Kirjailija:")
         self._author_entry = ttk.Entry(master=self._frame)
-        pages_label = ttk.Label(master=self._frame, text="Pages:")
+        pages_label = ttk.Label(master=self._frame, text="Sivuja:")
         self._pages_entry = ttk.Entry(master=self._frame)
-        notes_label = ttk.Label(master=self._frame, text="Notes:")
+        notes_label = ttk.Label(master=self._frame, text="Merkintöjä:")
         self._notes_entry = ttk.Entry(master=self._frame)
 
         button = ttk.Button(
