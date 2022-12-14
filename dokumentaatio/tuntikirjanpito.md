@@ -16,4 +16,5 @@
 | 8.12.  | 2   | lisää toiminnallisuutta |
 | 11.12. | 1   | dokumentaatio |
 | 12.12. | 2   | dokumentaatio |
-| yht | 46 | |
+| 14.12. | 3   | koodin siivousta, dokumentaatio |
+| yht | 49 | |

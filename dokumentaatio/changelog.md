@@ -44,3 +44,16 @@ tallentaminen ei vielä onnistu käyttöliittymänäkymän kautta.
 ## Viikko 6
 
 - Mahdollistettu muistiinpanojen poistaminen lukulistalta.
+
+## Viikko 7
+
+- Refaktoroitu koodia:
+    - luokka BookJournalService jaettu kahdeksi luokaksi:
+        - BookJournalService, joka vastaa lukupäiväkirjan sovelluslogiikasta
+        - ReadingListService, joka vastaa lukulistan sovelluslogiikasta
+
+    - luokka BookJournalRepository jaettu kahdeksi luokaksi:
+        - BookJournalRepository, joka vastaa lukupäiväkirjaan liittyvistä
+          tietokantaoperaatioista
+        - ReadingListRepository, joka vastaa lukulistaan liityvistä
+          tietokantaoperaatioista

@@ -8,7 +8,11 @@ Sovelluksen pakkausrakenne on seuraavanlainen:
 
 - Pakkaus _ui_ vastaa käyttöliittymästä.
 - Pakkaus _services_ vastaa sovelluslogiikasta.
+    - _BookJournalService_ vastaa lukupäiväkirjan ja _ReadingListService_
+      lukulistan sovelluslogiikasta.
 - Pakkaus _repositories_ vastaa tietokantaoperaatioista.
+    - _BookJournalRepository_ vastaa lukupäiväkirjan ja _ReadingListRepository_
+      lukulistan tietokantaoperaatioista.
 - Pakkaus _entities_ sisältää objektit:
     - _Book_, joka edustaa luettua kirjaa, sekä
     - _BookToRead_, joka edustaa muistiinpanoa kirjasta, jonka käyttäjä haluaa
