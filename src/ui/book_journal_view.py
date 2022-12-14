@@ -1,5 +1,6 @@
 from tkinter import ttk, constants
 from services.book_journal_service import book_journal_service
+from services.reading_list_service import reading_list_service
 
 class BookJournalView:
     """Lukupäiväkirjan perusnäkymä, jossa on kaksi välilehteä. Ensimmäisellä välilehdellä
@@ -93,7 +94,7 @@ class BookJournalView:
 
         label2 = ttk.Label(master=frame, text="Lukulista:")
 
-        notes = book_journal_service.find_all_notes()
+        notes = reading_list_service.find_all_notes()
 
         heading_label2.grid(padx=5, pady=5)
         button2.grid(padx=5, pady=5)
@@ -118,5 +119,5 @@ class BookJournalView:
         note_frame.grid()
 
     def _handle_delete_note(self, note_id):
-        book_journal_service.delete_note(note_id)
+        reading_list_service.delete_note(note_id)
         self._handle_view()

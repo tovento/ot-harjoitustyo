@@ -1,5 +1,5 @@
 from tkinter import ttk, constants
-from services.book_journal_service import book_journal_service
+from services.reading_list_service import reading_list_service
 
 class AddNoteToReadingList:
     """Näkymä, jossa käyttäjä voi lisätä muistiinpanon kirjasta, jonka haluaa
@@ -60,7 +60,7 @@ class AddNoteToReadingList:
         entry_value = self._entry.get()
 
         if entry_value:
-            book_journal_service.add_readinglist_note(entry_value)
+            reading_list_service.add_readinglist_note(entry_value)
 
             self._handle_book_journal_view()
         else:
