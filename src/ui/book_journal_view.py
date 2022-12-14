@@ -104,12 +104,12 @@ class BookJournalView:
 
     def _initialize_notes(self, frame, note):
         note_frame = ttk.Frame(master=frame)
-        label = ttk.Label(master=note_frame, text=note[0].description)
+        label = ttk.Label(master=note_frame, text=note.description)
 
         delete_button = ttk.Button(
                             master=note_frame,
                             text="Poista",
-                            command=lambda: self._handle_delete_note(note[1]))
+                            command=lambda: self._handle_delete_note(note.id))
 
         label.grid(row=0, column=0, padx=5, pady=5, sticky=constants.W)
         delete_button.grid(row=0, column=1, padx=5, pady=5, sticky=constants.EW)

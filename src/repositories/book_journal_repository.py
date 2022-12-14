@@ -25,7 +25,8 @@ class BookJournalRepository:
                     row["title"],
                     row["author"],
                     row["pages"],
-                    row["notes"]) for row in rows]
+                    row["notes"],
+                    row["id"]) for row in rows]
 
     def save_book(self, book):
         """Tallentaa luetun kirjan tietokantaan."""
@@ -61,7 +62,7 @@ class BookJournalRepository:
 
         rows = cursor.fetchall()
 
-        return [(BookToRead(row["description"]), row["id"]) for row in rows]
+        return [BookToRead(row["description"], row["id"]) for row in rows]
 
     def save_note(self, note):
         """Tallentaa muistiinpanon lukulistalle."""

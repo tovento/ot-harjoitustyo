@@ -42,7 +42,7 @@ class TestBookJournalRepository(unittest.TestCase):
         notes = book_journal_repository.find_all_notes()
 
         self.assertEqual(len(notes), 1)
-        self.assertEqual(notes[0][0].description, self.note1.description)
+        self.assertEqual(notes[0].description, self.note1.description)
 
     def test_find_all_notes(self):
         book_journal_repository.save_note(self.note1)
@@ -52,5 +52,5 @@ class TestBookJournalRepository(unittest.TestCase):
         
         self.assertEqual(len(notes), 2)
 
-        self.assertEqual(notes[0][0].description, "Sinuhe Egyptiläinen")
-        self.assertEqual(notes[1][0].description, "Tatu ja Patu Helsingissä")
+        self.assertEqual(notes[0].description, "Sinuhe Egyptiläinen")
+        self.assertEqual(notes[1].description, "Tatu ja Patu Helsingissä")
