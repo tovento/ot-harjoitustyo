@@ -18,8 +18,3 @@ class TestBookJournalService(unittest.TestCase):
         assert result.author == "Great Author"
         assert result.pages == 123
         assert result.notes == None
-
-    def test_BJS_returns_correct_booktoread_object(self):
-        result = self.service.add_readinglist_note("Soturikissat")
-
-        assert result.description == "Soturikissat"
