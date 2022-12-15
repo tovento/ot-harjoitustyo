@@ -57,3 +57,7 @@ tallentaminen ei vielä onnistu käyttöliittymänäkymän kautta.
           tietokantaoperaatioista
         - ReadingListRepository, joka vastaa lukulistaan liityvistä
           tietokantaoperaatioista
+
+- Refaktoiroitu testejä vastaavanlaisesti.
+
+- Kirjoitettu muistiinpanojen poistamista testaava testi.

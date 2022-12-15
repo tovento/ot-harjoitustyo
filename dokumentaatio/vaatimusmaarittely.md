@@ -30,3 +30,11 @@ sivunumerot.
 ## Mahdollisia laajennuksia
 
 - Luettujen kirjojen hakeminen ajanjakson, nimen tms. perusteella.
+- Luettujen kirjojen muokkaaminen.
+
+- Käyttöliittymän parantaminen suurten aineistojen tarkastelun suhteen. Tallennettujen
+  kirjojen ja muistiinpanojen määrän kasvaessa niiden tarkastelu käy raskaaksi,
+  kun kaikki tiedot näkyvät samalla sivulla. Käyttöliittymässä voisi näkyä
+  kerrallaan esimerkiksi viimeisimmät kymmenen kirjaa tai muistiinpanoa, ja
+  alalaitaan voisi lisätä sivunumeroita, joiden kautta aikaisempia merkintöjä
+  pääsisi tarkastelemaan.

@@ -1,5 +1,26 @@
 # Käyttöohje
 
+Lataa viimeisin release
+[täältä](https://github.com/tovento/ot-harjoitustyo/releases).
+
+Sovelluksen käyttö vaatii [Poetryn](https://python-poetry.org/) asennuksen.
+
+## Asennus ja käyttöönotto
+
+Sovellus on kehitetty ja testattu Python-versiolla 3.10. On mahdollista, että sovellus ei toimi tarkoituksenmukaisesti vanhemmilla Pythonin versioilla.
+
+Riippuvuudet asennetaan komennolla:
+
+```bash
+poetry install
+```
+
+Sovellus käynnistyy komennolla:
+
+```bash
+poetry run invoke start
+```
+
 ## Kirjan lisääminen lukupäiväkirjaan
 
 Ohjelma käynnistyy lukupäiväkirjanäkymään:

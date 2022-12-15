@@ -17,4 +17,5 @@
 | 11.12. | 1   | dokumentaatio |
 | 12.12. | 2   | dokumentaatio |
 | 14.12. | 3   | koodin siivousta, dokumentaatio |
-| yht | 49 | |
+| 15.12. | 3   | testit, dokumentaatio |
+| yht | 52 | |
