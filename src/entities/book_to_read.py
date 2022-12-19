@@ -9,16 +9,16 @@ class BookToRead:
         id: Kokonaisluku, olion tunnus tietokannassa.
     """
 
-    def __init__(self, description, id=None):
+    def __init__(self, description, id_=None):
         """Luokan konstruktori, joka luo uuden BookToRead-olion.
 
         Args:
             description:
                 Merkkijonoarvo, joka kuvaa kirjaa, jonka käyttäjä
                 haluaa lukea. Voi olla esim. kirjan tai kirjailijan nimi.
-            id:
+            id_:
                 Oletusarvoltaan None. Kokonaisluku, jota käytetään
                 tietokantaoperaatioiden yhteydessä.
         """
         self.description = description
-        self.id = id
+        self.id = id_

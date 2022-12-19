@@ -12,7 +12,7 @@ class Book:
         id: Kokonaisluku, olion tunnus tietokannassa.
     """
 
-    def __init__(self, date, title, author, pages, notes=None, id=None):
+    def __init__(self, date, title, author, pages, notes=None, id_=None):
         """Luokan konstruktori, joka luo uuden Book-olion.
 
         Args:
@@ -25,7 +25,7 @@ class Book:
             notes:
                 Vapaaehtoinen, oletustarvoltaan None.
                 Merkkijonoarvo, joka kuvaa käyttäjän muistiinpanoja kirjasta.
-            id:
+            id_:
                 Oletusarvoltaan None. Kokonaisluku, jota käytetään
                 tietokantaoperaatioiden yhteydessä.
         """
@@ -34,4 +34,4 @@ class Book:
         self.author = author
         self.pages = pages
         self.notes = notes
-        self.id = id
+        self.id = id_

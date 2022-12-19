@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk
 from ui.ui import UI
 from initialize_database import initialize_database
 
@@ -13,8 +13,8 @@ def main():
     window.minsize(300, 300)
     window['background'] = '#dfd5e1'
 
-    ui = UI(window)
-    ui.start()
+    user_interface = UI(window)
+    user_interface.start()
 
     window.mainloop()
 
