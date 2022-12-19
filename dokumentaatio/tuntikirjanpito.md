@@ -18,4 +18,5 @@
 | 12.12. | 2   | dokumentaatio |
 | 14.12. | 3   | koodin siivousta, dokumentaatio |
 | 15.12. | 3   | testit, dokumentaatio |
-| yht | 52 | |
+| 19.12. | 1   | viimeset korjaukset ja loppupalautuksen release |
+| yht | 53 | |

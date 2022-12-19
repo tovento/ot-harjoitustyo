@@ -6,7 +6,7 @@ Lukupäiväkirjan avulla käyttäjä voi kirjata muistiin tietoja lukemistaan ki
 ## Uusin release
 
 Uusin release löytyy
-[täältä](https://github.com/tovento/ot-harjoitustyo/releases/tag/viikko5).
+[täältä](https://github.com/tovento/ot-harjoitustyo/releases).
 
 ## Asennus ja käyttöönotto
 
